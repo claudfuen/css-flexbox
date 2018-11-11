@@ -11,3 +11,34 @@ Flex Item Properties
 - flex-grow
 
 */
+
+/* 
+FLEX CONTAINER
+contains flex-items
+
+Changes Behavior
+*/
+
+.container {
+    display: flex
+}
+
+div > div {
+    height: 100px;
+    width: 50px;
+    color: white;
+}
+
+#d1 {
+    background-color: red;
+}
+#d2 {
+    background-color: orangered;
+}
+#d3 {
+    background-color: orange;
+}
+#d4 {
+    background-color: yellow;
+}
+
