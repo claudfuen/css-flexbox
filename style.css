@@ -1,32 +1,3 @@
-/* 
-Container Properties
-- flex-directions
-- justify-content
-- flex-wrap
-
-
-Flex Item Properties
-- order
-- flex
-- flex-grow
-
-*/
-
-/* 
-FLEX CONTAINER
-contains flex-items
-Changes Behavior
-
-MAIN --->
-
-CROSS
- |
- |
-\/
-
-
-*/
-
 body {
     padding: 0px;
 }
@@ -35,6 +6,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     display: none;
 }
 
@@ -46,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: ;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -82,5 +55,38 @@ div.container2 > div {
 }
 #d4 {
     background-color: yellow;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.navbar div {
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 1px solid blue;
+}
+
+#home {
+    order: 4;
 }
 
