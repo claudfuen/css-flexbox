@@ -15,18 +15,60 @@ Flex Item Properties
 /* 
 FLEX CONTAINER
 contains flex-items
-
 Changes Behavior
+
+MAIN --->
+
+CROSS
+ |
+ |
+\/
+
+
 */
 
-.container {
-    display: flex
+body {
+    padding: 0px;
 }
 
-div > div {
-    height: 100px;
-    width: 50px;
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: none;
+}
+
+.container {
+    margin: 0;
+    width: 25vh;
+    height: 100vh;
+    background-color: rgb(65, 65, 65);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container div{
     color: white;
+    text-decoration-style: none;
+    text-emphasis: none;
+}
+
+.container div div{
+    margin: 5px;
+    padding: 7px;
+    font-weight: 100;
+}
+
+div.container2 > div {
+    height: 100px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 100;
 }
 
 #d1 {
