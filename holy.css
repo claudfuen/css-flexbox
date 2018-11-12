@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(61, 61, 61);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.nav {
+    background-color: darkcyan;
+    height: 10vh;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    height: 80vh;
+    min-height: 800px;
+    flex-wrap: wrap;
+}
+
+/* Each of the content areas */
+
+.side {
+    background-color: gray;
+    margin: 5px 5px 5px 0px;
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 640px;
+}
+
+.mid {
+    background-color: white;
+    margin: 5px 5px 5px 5px;
+    flex-basis: 400px;
+    flex-grow: 2;
+}
+.ad {
+    background-color: cornflowerblue;
+    margin: 5px 0px 5px 5px;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 640px) {
+
+    .side {
+        flex-basis: 640px;
+        flex-grow: 1;
+        order: 1;
+        min-height: 10vh;
+        margin: 5px 0px;
+    }
+    
+    .mid {
+        margin: 5px 0px;
+        flex-basis: 640px;
+        flex-grow: 1;
+        order: 0;
+        min-height: 60vh;
+    }
+    .ad {
+        background-color: cornflowerblue;
+        margin: 5px 0px;
+        flex-basis: 640px;
+        flex-grow: 1;
+        order: 2;
+        min-height: 10vh;
+    }
+}
